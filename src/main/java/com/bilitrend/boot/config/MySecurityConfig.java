@@ -18,7 +18,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         // TODO
-        auth.jdbcAuthentication()
+
     }
 
     @Bean

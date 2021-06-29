@@ -14,7 +14,7 @@
     <name>boot-skeleton-jdk11</name>
     <description>A Spring Boot Project Skeleton</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
     </properties>
     <dependencies>
         <dependency>
