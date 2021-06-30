@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SystemParamController {
 
-
     public BaseResult<Long> addSystemParam(SystemParamForm form) {
         return null;
     }

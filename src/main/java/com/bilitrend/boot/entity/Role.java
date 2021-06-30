@@ -17,7 +17,7 @@ import java.util.Date;
  * @version $Id: Role.java, v 0.1 2021年03月26日 6:47 下午 yanhuai Exp $
  */
 @Entity
-@Table(name = "s_role")
+@Table(name = "t_role")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -39,6 +39,12 @@ public class Role {
     @Column(name = "role_name")
     private String roleName;
 
-    @Column(name = "description")
+    @Column
+    private String domain;
+
+    @Column
     private String description;
+
+    @Column
+    private String status;
 }

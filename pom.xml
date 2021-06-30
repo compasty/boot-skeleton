@@ -11,7 +11,7 @@
     <groupId>com.bilitrend</groupId>
     <artifactId>boot-skeleton</artifactId>
     <version>1.0.0</version>
-    <name>boot-skeleton-jdk11</name>
+    <name>boot-skeleton</name>
     <description>A Spring Boot Project Skeleton</description>
     <properties>
         <java.version>8</java.version>

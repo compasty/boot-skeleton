@@ -10,6 +10,8 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import java.util.concurrent.Executor;
 
 /**
+ * 异步配置
+ *
  * @author yanhuai
  * @version $Id: MyAsyncConfig.java, v 0.1 2021年03月29日 7:58 下午 yanhuai Exp $
  */

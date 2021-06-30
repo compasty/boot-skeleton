@@ -1,3 +1,7 @@
+/**
+ * Alipay.com Inc.
+ * Copyright (c) 2004-2021 All Rights Reserved.
+ */
 package com.bilitrend.boot.entity;
 
 import lombok.Getter;
@@ -14,14 +18,14 @@ import java.util.Date;
 
 /**
  * @author yanhuai
- * @version $Id: Permission.java, v 0.1 2021年03月26日 6:47 下午 yanhuai Exp $
+ * @version $Id: UserPermissionRelation.java, v 0.1 2021年06月30日 8:17 下午 yanhuai Exp $
  */
 @Entity
-@Table(name = "t_permission")
+@Table(name = "t_user_permission_rel")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Permission {
+public class UserPermissionRelation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,18 +37,9 @@ public class Permission {
     @Column(name = "gmt_modified")
     private Date gmtModified;
 
-    @Column(name = "permission_code")
-    private String permissionCode;
+    @Column(name = "user_id")
+    private String userId;
 
-    @Column(name = "permission_name")
-    private String permissionName;
-
-    @Column
-    private String domain;
-
-    @Column
-    private String description;
-
-    @Column
-    private String status;
+    @Column(name = "role_code")
+    private String roleCode;
 }

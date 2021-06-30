@@ -1,7 +1,5 @@
 package com.bilitrend.boot.service.impl;
 
-import com.bilitrend.boot.entity.User;
-import com.bilitrend.boot.repository.UserRepository;
 import com.bilitrend.boot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

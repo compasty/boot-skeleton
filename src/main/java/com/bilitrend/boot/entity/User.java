@@ -17,7 +17,7 @@ import java.util.Date;
  * @version $Id: User.java, v 0.1 2021年03月26日 6:47 下午 yanhuai Exp $
  */
 @Entity
-@Table(name = "s_user")
+@Table(name = "t_user")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -36,14 +36,25 @@ public class User {
     @Column(name = "user_id")
     private String userId;
 
-    @Column
-    private String username;
+    @Column(name = "user_name")
+    private String userName;
+
+    @Column(name = "mobile_no")
+    private String mobileNo;
+
+    @Column(name = "user_email")
+    private String userEmail;
+
+    @Column(name = "user_status")
+    private String userStatus;
 
     @Column(name = "nick_name")
     private String nickName;
 
+    @Column(name = "user_type")
+    private String userType;
+
     @Column
     private String password;
-
 
 }

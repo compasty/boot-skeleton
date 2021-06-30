@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     public Optional<User> queryByUsername(String username) {
         Preconditions.checkState(StringUtils.isNotEmpty(username), "Username is empty.");
 
-        Optional<com.bilitrend.boot.entity.User> user = userRepository.findOneByUsername(username);
+        Optional<com.bilitrend.boot.entity.User> user = userRepository.findByUserName(username);
 
 
         return Optional.empty();

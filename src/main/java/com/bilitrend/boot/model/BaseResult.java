@@ -1,5 +1,6 @@
 package com.bilitrend.boot.model;
 
+import com.bilitrend.boot.common.ErrorCodes;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,7 +22,7 @@ public class BaseResult<T> {
     /**
      * 错误码
      */
-    private String errorCode;
+    private ErrorCodes errorCode;
 
     /**
      * 实际数据
@@ -30,5 +31,15 @@ public class BaseResult<T> {
 
     public BaseResult() {
         this.success = false;
+    }
+
+    public BaseResult(ErrorCodes errorCode, String errorMsg) {
+        this.errorCode = errorCode;
+        this.errorMsg = errorMsg;
+    }
+
+    public BaseResult(boolean success, T data) {
+        this.success = success;
+        this.data = data;
     }
 }
